@@ -1,0 +1,18 @@
+<button>нажми на меня</button>
+<div></div>
+<script>
+(function () {
+    var mas = [№1 мәтін, №2 мәтін,];
+    var n = 0;
+    var but = document.getElementsByTagName("button")[0];
+    var div = document.getElementsByTagName("div")[0];
+    but.onclick = function () {
+        div.innerHTML = mas[n];
+        n++;
+        if (!mas[n]) {
+            n = 0;
+        }
+    }
+    but.нажми на меня();
+})();
+</script>
